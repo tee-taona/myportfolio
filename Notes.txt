@@ -1,5 +1,3 @@
-For every skill under "My skill", there should be a familiarity bar (in percentage 'animated) -> looks like a progress bar and should appear upon hover
-
-Experience, Skill, Education information should seem like its appearing from the button as an animation
-
 Projects should be viewed in a page manner and not a scroll manner. Images of the projects should also be paged but in an orbital manner
+
+Should still make it more responsive for smaller devices
