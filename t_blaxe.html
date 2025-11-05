@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tylon Tao Takaidza</title>
 
@@ -13,11 +13,8 @@
 <body>
 
     <!--Header-->
-    <Header>
+    <header>
         <a href="#" class="logo">Tylon's Portfolio</a>
-
-        <box-icon name='menu-alt-left' id="menu-icon"></box-icon>
-
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -25,22 +22,23 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-    </Header>
+        <div class="nav-toggler btn" id="nav-toggler"><i class='bx bx-menu-alt-right'></i></div>
+    </header>
 
     <!-- home section -->
     <section class="home active" id="home">
         <div class="home-image">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="images/Me.png" alt="Tylon">
-                    <a href="#" class="btn-download-cv"><i class='bx bx-file'></i></a>
+                    <img src="assets/images/Me.png" alt="Tylon">
+                    <a href="assets/Tylon-Takaidza-CV.pdf" class="btn-download-cv"><i class='bx bx-file'></i></a>
                 </div>
             </div>
         </div>
 
         <div class="home-info">
             <h1><span>T</span>ylon <span>T.</span> <span>T</span>akaidza</h1>
-            <h2><span class="neon-text"> <span class="role active">Software Engineer</span><span class="role">Computer Scientist</span><span class="role">Full Stack Developer</span> </span></h2>
+            <h2><span class="neon-text"> <span class="role active">Software Engineer</span><span class="role">Computer Scientist</span><span class="role">Full-Stack Developer</span> </span></h2>
             <p>A passionate <strong>Software Engineer</strong> with expertise in building 
                 scalable web and mobile applications. I thrive on solving complex problems, 
                 designing secure systems, and creating innovative digital solutions that 
@@ -48,9 +46,9 @@
             <div class="btn-sci">
                 <a href="#projects" class="btn">View Projects</a>
                 <div class="sci">
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="https://web.facebook.com/tylon.takaidza.3/"><i class='bx bxl-facebook' ></i></a>
+                    <a href="www.linkedin.com/in/tylon-takaidza-a15b76322"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/tee-taona"><i class='bx bxl-github' ></i></a>
                     <a href="#"><i class='bx bxl-discord-alt' ></i></a>
                 </div>
             </div>
@@ -85,9 +83,12 @@
                     My drive to <strong>learn continuously</strong> and <strong>collaborate effectively</strong> makes me adaptable, 
                     versatile, and a valuable addition to any development team.
                 </p>
-                <button class="my-btn active">Experience</button>
-                <button class="my-btn">Education</button>
-                <button class="my-btn">Skills</button>
+                <div class="btns">
+                    <button class="my-btn active">Experience</button>
+                    <button class="my-btn">Education</button>
+                    <button class="my-btn">Skills</button>
+                </div>
+                
             </div>
 
             <div class="my-box">
@@ -123,25 +124,25 @@
                     </div>
 
                     <div class="my-list languages active">
-                        <div class="my-item"  data-percent="75" data-tooltip="Java"><i class="devicon-java-plain"></i>
+                        <div class="my-item"  data-percent="95" data-tooltip="Java"><i class="devicon-java-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="C++"><i class="devicon-cplusplus-plain"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="C++"><i class="devicon-cplusplus-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="C#"><i class="devicon-csharp-plain"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="C#"><i class="devicon-csharp-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="C"><i class="devicon-c-plain"></i>
+                        <div class="my-item"  data-percent="70" data-tooltip="C"><i class="devicon-c-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
@@ -153,7 +154,7 @@
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Assembly (MASM)">
+                        <div class="my-item"  data-percent="60" data-tooltip="Assembly (MASM)">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
                                 <path d="M9 2h6v2H9V2zm0 18h6v2H9v-2zM2 9h2v6H2V9zm18 0h2v6h-2V9zM7 7h10v10H7V7zm2 2v6h6V9H9z"/>
                             </svg>
@@ -162,13 +163,13 @@
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="HTML5"><i class="devicon-html5-plain"></i>
+                        <div class="my-item"  data-percent="90" data-tooltip="HTML5"><i class="devicon-html5-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="CSS3"><i class="devicon-css3-plain"></i>
+                        <div class="my-item"  data-percent="90" data-tooltip="CSS3"><i class="devicon-css3-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
@@ -186,7 +187,7 @@
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Dart"><i class="devicon-dart-plain"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="Dart"><i class="devicon-dart-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
@@ -195,31 +196,31 @@
                     </div>
 
                     <div class="my-list frameworks">
-                        <div class="my-item"  data-percent="75" data-tooltip="Spring Boot"><i class="devicon-spring-plain"></i>
+                        <div class="my-item"  data-percent="50" data-tooltip="Spring Boot"><i class="devicon-spring-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Flutter"><i class="devicon-flutter-plain"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="Flutter"><i class="devicon-flutter-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Node.js"><i class="devicon-nodejs-plain"></i>
+                        <div class="my-item"  data-percent="90" data-tooltip="Node.js"><i class="devicon-nodejs-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="MySql"><i class="devicon-mysql-original"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="MySql"><i class="devicon-mysql-original"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip=".NET Framework"><i class="devicon-dotnetcore-plain"></i>
+                        <div class="my-item"  data-percent="90" data-tooltip=".NET Framework"><i class="devicon-dotnetcore-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
@@ -240,45 +241,45 @@
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Android Studio"><i class="devicon-androidstudio-plain"></i>
+                        <div class="my-item"  data-percent="65" data-tooltip="Android Studio"><i class="devicon-androidstudio-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Firebase"><i class="devicon-firebase-plain"></i>
+                        <div class="my-item"  data-percent="60" data-tooltip="Firebase"><i class="devicon-firebase-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Git"><i class="devicon-git-plain"></i>
+                        <div class="my-item"  data-percent="90" data-tooltip="Git"><i class="devicon-git-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Github"><i class="devicon-github-original"></i>
+                        <div class="my-item"  data-percent="95" data-tooltip="Github"><i class="devicon-github-original"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Gradle"><i class="devicon-gradle-original"></i>
+                        <div class="my-item"  data-percent="60" data-tooltip="Gradle"><i class="devicon-gradle-original"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Maven"><i class="devicon-maven-plain"></i>
+                        <div class="my-item"  data-percent="60" data-tooltip="Maven"><i class="devicon-maven-plain"></i>
                             <div class="skill-bar">
                                 <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
-                        <div class="my-item"  data-percent="75" data-tooltip="Postman"><i class="devicon-postman-plain"></i>
+                        <div class="my-item"  data-percent="80" data-tooltip="Postman"><i class="devicon-postman-plain"></i>
                             <div class="skill-bar">
-                                <div class="skill-fill" data-percent="60"></div>
+                                <div class="skill-fill"></div>
                             </div>
                             <span class="skill-percent"></span>
                         </div>
@@ -407,30 +408,30 @@
             <div class="contact-box">
                 <div class="recipient-box">
                     <h2 class="c-heading">Send Me a message!</h2>
-                    <form action="#">
+                    <form id="contactForm">
                         <div class="field-box">
                             <div class="input-box">
-                                <input type="text" required>
+                                <input type="text" name="from_name" required>
                                 <label>Full Name</label>
                                 <i class='bx bx-user'></i>
                             </div>
                             <div class="input-box">
-                                <input type="text" required>
+                                <input type="text" name="reply_to" required>
                                 <label>Email Address</label>
                                 <i class='bx bx-envelope'></i>
                             </div>
                             <div class="input-box">
-                                <input type="text" required>
+                                <input type="text" name="phone" required>
                                 <label>Phone Number</label>
                                 <i class='bx bx-phone'></i>
                             </div>
                             <div class="input-box">
-                                <input type="text" required>
+                                <input type="text" name="subject" required>
                                 <label>Subject</label>
                                 <i class='bx bx-detail'></i>
                             </div>
                             <div class="input-box full-width">
-                                <textarea type="text" required></textarea>
+                                <textarea type="text" name="message" required></textarea>
                                 <label>Your Message</label>
                                 <i class='bx bx-edit'></i>
                             </div>
@@ -443,5 +444,12 @@
     </section>
 
     <script src="js/myjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init("MYd2mNY-r15RGrO5r");
+    })();
+    </script>
+
 </body>
 </html>
